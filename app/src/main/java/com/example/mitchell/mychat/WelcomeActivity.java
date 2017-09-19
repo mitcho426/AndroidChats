@@ -32,9 +32,9 @@ public class WelcomeActivity extends AppCompatActivity {
         thread.start();
     }
 
-    private int count = 5;
-
-
-
-
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
 }
