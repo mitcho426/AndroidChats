@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "459384888690",
+    "firebase_url": "https://mychat-7f25a.firebaseio.com",
+    "project_id": "mychat-7f25a",
+    "storage_bucket": "mychat-7f25a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459384888690:android:86ae2681b256b411",
+        "android_client_info": {
+          "package_name": "com.example.mitchell.mychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459384888690-mn31jog3htmg57dlmcnemnoo35sfe2ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mitchell.mychat",
+            "certificate_hash": "3d4c6cad81412a1bea64ae737061a76ffa7dc2c8"
+          }
+        },
+        {
+          "client_id": "459384888690-fhlo0c4se5fhjq287fip48peholoaknt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbWkaPBD7KclXn-OwPjNabieAKaggn_8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459384888690-fhlo0c4se5fhjq287fip48peholoaknt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
