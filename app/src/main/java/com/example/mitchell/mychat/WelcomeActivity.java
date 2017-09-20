@@ -22,7 +22,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 }
 
                 finally {
-                    //Send user to Login Activity
+                    //Send user to Main Activity
                     Intent mainIntent = new Intent(WelcomeActivity.this, MainActivity.class);
                     startActivity(mainIntent);
                 }
