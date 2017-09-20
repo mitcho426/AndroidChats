@@ -4,7 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/register"
-    tools:context="com.example.mitchell.mychat.RegisterActivity">
+    tools:context="com.example.mitchell.mychat.RegisterActivity">\
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/register_toolbar"
+        />
+
 
     <EditText
         android:id="@+id/nameText"

@@ -6,6 +6,9 @@
     android:background="@drawable/login"
     tools:context="com.example.mitchell.mychat.LoginActivity">
 
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/login_toolbar"/>
+
     <EditText
         android:id="@+id/nameText"
         android:layout_width="match_parent"

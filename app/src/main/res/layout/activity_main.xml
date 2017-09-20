@@ -5,6 +5,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.mitchell.mychat.MainActivity">
 
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/main_page_toolbar"/>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
