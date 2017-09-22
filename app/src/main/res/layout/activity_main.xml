@@ -5,19 +5,28 @@
     android:layout_height="match_parent"
     tools:context="com.example.mitchell.mychat.MainActivity">
 
-    <include layout="@layout/app_bar_layout"
-        android:id="@+id/main_page_toolbar"/>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="247dp"
-        android:text="Welcome to main activity"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:id="@+id/appBarLayout">
+
+        <include layout="@layout/app_bar_layout"
+            android:id="@+id/main_page_toolbar" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mains_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_tabs_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout">
+    </android.support.v4.view.ViewPager>
+
+
 </RelativeLayout>
