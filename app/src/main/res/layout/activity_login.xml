@@ -10,31 +10,31 @@
         android:id="@+id/login_toolbar"/>
 
     <EditText
-        android:id="@+id/nameText"
+        android:id="@+id/login_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="239dp"
-        android:padding="10dp"
         android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="Name" />
+        android:hint="Email"
+        android:inputType="textMultiLine|textEmailAddress"
+        android:padding="10dp" />
 
     <EditText
-        android:id="@+id/passwordText"
+        android:id="@+id/login_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/nameText"
+        android:layout_alignTop="@+id/login_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="98dp"
-        android:padding="10dp"
         android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="Password" />
+        android:hint="Password"
+        android:inputType="textMultiLine|textPassword"
+        android:padding="10dp" />
 
     <Button
-        android:id="@+id/signInText"
+        android:id="@+id/login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -1,6 +1,5 @@
 package com.example.mitchell.mychat;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -40,9 +39,9 @@ public class RegisterActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Sign Up");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        registerName = (EditText) findViewById(R.id.nameText);
+        registerName = (EditText) findViewById(R.id.login_email);
         registerEmail = (EditText) findViewById(R.id.emailText);
-        registerPassword = (EditText) findViewById(R.id.passwordText);
+        registerPassword = (EditText) findViewById(R.id.login_password);
 
         registerButton = (Button) findViewById(R.id.createAccountButton);
 
