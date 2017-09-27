@@ -22,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 import com.theartofdev.edmodo.cropper.CropImage;
 import com.theartofdev.edmodo.cropper.CropImageView;
 
@@ -68,6 +69,7 @@ public class SettingsActivity extends AppCompatActivity {
 
                 settingsDisplayName.setText(name);
                 settingsDisplayStatus.setText(status);
+                Picasso.with(SettingsActivity.this).load(image).into(settingsDisplayImage);
             }
 
             @Override
@@ -114,6 +116,17 @@ public class SettingsActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(SettingsActivity.this, "Saving your profile image to Firebase Storage", Toast.LENGTH_SHORT).show();
+
+                            String downloadUrl = task.getResult().getDownloadUrl().toString();
+                            userRef.child("user_image").setValue(downloadUrl)
+                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            Toast.makeText(SettingsActivity.this, "Profile successfully updated in Firebase Database", Toast.LENGTH_SHORT).show();
+                                        }
+                                    });
+
+
                         } else {
                             Toast.makeText(SettingsActivity.this, "Error while uploading your profile image", Toast.LENGTH_SHORT).show();
                         }
