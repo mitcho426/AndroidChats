@@ -69,7 +69,12 @@ public class SettingsActivity extends AppCompatActivity {
 
                 settingsDisplayName.setText(name);
                 settingsDisplayStatus.setText(status);
-                Picasso.with(SettingsActivity.this).load(image).into(settingsDisplayImage);
+
+                //Check if user has a image, if not use default image
+                if(!image.equals("default_profile")) {
+                    Picasso.with(SettingsActivity.this).load(image).into(settingsDisplayImage);
+                }
+
             }
 
             @Override
