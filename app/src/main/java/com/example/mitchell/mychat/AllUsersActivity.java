@@ -102,7 +102,5 @@ public class AllUsersActivity extends AppCompatActivity {
             CircleImageView thumb_image = (CircleImageView) mView.findViewById(R.id.all_users_profile_image);
             Picasso.with(ctx).load(user_thumb_image).placeholder(R.drawable.default_profile).into(thumb_image);
         }
-
-
     }
 }
